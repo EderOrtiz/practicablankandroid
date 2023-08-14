@@ -14,13 +14,22 @@
   </ion-header>
 
   <ion-grid>
-    <ion-row><ion-col><h1 style="text-align: center;">Inicio de Sesion</h1></ion-col></ion-row>
+    <ion-row><ion-col><h1 style="text-align: center;">Inicio de Sesion {{ nombreUsuario }} </h1></ion-col></ion-row>
 
-    <ion-row><ion-input label="Nombre: "></ion-input></ion-row>
+    <ion-row><ion-input label="Nombre: " [(ngModel)]="user1"></ion-input></ion-row>
     <ion-row><ion-input label="Contraseña: " type="password"></ion-input></ion-row>
     <ion-row>
       <ion-col>
-        <ion-button style="float: right;" [routerLink]="['/pagina1']">Iniciar sesion</ion-button>
+      <!--
+        
+        boton para verificar que se esta guardando el dato
+
+        <ion-button style="float: right;" [routerLink]="['/pagina1']">Iniciar sesion {{ user1 }}</ion-button>
+
+      -->  
+
+      <ion-button style="float: right;" (click)="inicioSesion()">Iniciar sesion {{ user1 }}</ion-button>
+
       </ion-col>
     </ion-row>
   </ion-grid>
