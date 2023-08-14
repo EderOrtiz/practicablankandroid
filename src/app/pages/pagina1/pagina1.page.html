@@ -1,0 +1,29 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>pagina1</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">pagina1</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-grid>
+    <ion-row><ion-col><h1 style="text-align: center;">Perfil</h1></ion-col></ion-row>
+
+    <ion-row><ion-input label="Nombre: "></ion-input></ion-row>
+    <ion-row><ion-input label="Apellido: "></ion-input></ion-row>
+    <ion-row><ion-input label="Rut: "></ion-input></ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-button style="float: left;" [routerLink]="['/home']">Cerrar</ion-button>
+        <ion-button style="float: right;" [routerLink]="['/pagina2']">Pagina2</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  
+</ion-content>
