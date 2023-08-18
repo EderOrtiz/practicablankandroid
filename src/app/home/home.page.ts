@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {  Router } from '@angular/router';
+import {  NavigationExtras, Router } from '@angular/router';
 import { AlertController, ToastController } from '@ionic/angular';
 
 @Component({
@@ -48,9 +48,16 @@ export class HomePage {
   }
 
   inicioSesion(){
-    this.presentToast();
 
-    this.router.navigate(['/pagina1']);
+    let navigationExtras: NavigationExtras = {
+      state: {
+        userEnviado: this.user1,
+        claveEnviada: this.clave
+      }
+    }
+
+    this.presentToast();
+    this.router.navigate(['/pagina1'], navigationExtras);
 
   }
 
