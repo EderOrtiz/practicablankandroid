@@ -19,6 +19,11 @@ const routes: Routes = [
     path: 'pagina2',
     loadChildren: () => import('./pages/pagina2/pagina2.module').then( m => m.Pagina2PageModule)
   },
+  {
+    path: '**',
+    loadChildren: () => import('./pages/notfound/notfound.module').then( m => m.NotfoundPageModule)
+  },
+
 ];
 
 @NgModule({
