@@ -11,6 +11,7 @@ export class HomePage {
   user1: string = "";
   nombreUsuario: string = "Ernesto";
   clave = "1234";
+  edad:  number = 22;
   lista: any = [
     {
       nombre: "Eder",

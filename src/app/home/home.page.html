@@ -29,9 +29,13 @@
 
         <ion-button style="float: right;" [routerLink]="['/pagina1']">Iniciar sesion {{ user1 }}</ion-button>
 
+        *ngIf="edad < 15" sirve para verificar por ejemplo la edad
+
       -->  
 
-      <ion-button style="float: right;" (click)="inicioSesion()">Iniciar sesion {{ user1 }}</ion-button>
+      <ion-button  *ngIf="edad < 15" style="float: right;" (click)="inicioSesion()">Iniciar sesion {{ user1 }}</ion-button>
+
+
 
       </ion-col>
     </ion-row>
