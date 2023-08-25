@@ -17,6 +17,11 @@ export class HomePage {
       nombre: "Eder",
       apellido: "Ortiz",
       edad: 25
+    },
+    {
+      nombre: "Ernesto",
+      apellido: "Pino",
+      edad: 12
     }
   ]
 

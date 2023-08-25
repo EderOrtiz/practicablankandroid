@@ -44,5 +44,9 @@
 <app-componente1 nombre="Victor">
 
 </app-componente1>
+
+<ion-item *ngFor="let x of lista">
+  <ion-label>{{ x.nombre  }} {{ x.apellido }} - {{ x.edad }}</ion-label>
+</ion-item>
   
 </ion-content>
