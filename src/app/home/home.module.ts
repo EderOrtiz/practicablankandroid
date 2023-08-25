@@ -6,6 +6,8 @@ import { HomePage } from './home.page';
 
 import { HomePageRoutingModule } from './home-routing.module';
 import { Componente1Component } from '../components/componente1/componente1.component';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
+import {MatProgressBarModule} from '@angular/material/progress-bar';
 
 
 @NgModule({
@@ -13,7 +15,9 @@ import { Componente1Component } from '../components/componente1/componente1.comp
     CommonModule,
     FormsModule,
     IonicModule,
-    HomePageRoutingModule
+    HomePageRoutingModule,
+    MatProgressSpinnerModule,
+    MatProgressBarModule
   ],
   declarations: [HomePage, Componente1Component]
 })

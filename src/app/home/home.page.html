@@ -42,7 +42,28 @@
   </ion-grid>
 
 <app-componente1 nombre="Victor">
-
 </app-componente1>
-  
+
+  <ion-item *ngFor="let x of lista">
+    <ion-label>{{ x.nombre | uppercase }} {{ x.apellido | lowercase }} - {{ x.edad | number:"1.0-2" }}</ion-label>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>{{ edad | percent:'2.2-2' }}</ion-label>
+  </ion-item>
+
+  <mat-spinner></mat-spinner>
+
+  <mat-progress-bar mode="query"></mat-progress-bar>
+
+
+
+  <div class="track">
+    <ion-card id="card" button="true">
+      <ion-card-content>Card</ion-card-content>
+    </ion-card>
+  </div>
+
+  <p>Drag the square along the track.</p>
+
 </ion-content>
