@@ -45,7 +45,9 @@ export class HomePage {
     }
   ]
 
-  constructor(private router: Router, private alertController: AlertController, private toastController: ToastController, private animationCtrl: AnimationController, private gestureCtrl: GestureController) { }
+  constructor(private router: Router, private alertController: AlertController, private toastController: ToastController, private animationCtrl: AnimationController, private gestureCtrl: GestureController) {
+    localStorage.setItem('token', this.nombreUsuario);
+   }
 
   private onMove(ev: GestureDetail) {
     if (!this.started) {
